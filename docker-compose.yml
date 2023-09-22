@@ -147,10 +147,10 @@ services:
   postgres10:
     image: postgis/postgis:10-3.1-alpine
     environment:
-      POSTGRES_PASSWORD: secret
-      POSTGRES_DB: directus
+      POSTGRES_PASSWORD: 98e40c9203038fa5a3c89582cf # password sap CF
+      POSTGRES_DB: dZHpDPMcqpBb #admin password CF
     ports:
-      - 5111:5432
+      - 5086:5086
 
   cockroachdb:
     image: cockroachdb/cockroach:latest-v21.1
